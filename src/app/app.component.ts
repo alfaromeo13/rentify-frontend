@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rentify-frontend';
+  isActive:boolean=false;
+  showParagraph :boolean=false;
+  title: string = 'rentify-frontend';
+
+  handleClick():void {
+    this.isActive=!this.isActive;
+    this.showParagraph=!this.showParagraph;
+    console.log('Clicked!')
+  }
 }

@@ -1,0 +1,32 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+  --shadowDark: #D9DDE6;
+  --shadowLight: #EFF5FE;
+}
+
+body {
+  background-image: url('../../images/blurred.jpeg');
+  background-size: cover;
+}
+
+.hero-body {
+  justify-content: center;
+}
+
+.login {
+  background-color: white;
+  border-radius: 25px;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
+}
+
+input {
+  background: var(--shadowLight) !important;
+}
+
+.alfa {
+  font-weight: 600;
+}
