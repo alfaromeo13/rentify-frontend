@@ -1,13 +1,9 @@
-* {
-  font-family: 'Nunito Sans', sans-serif;
+.root {
+  --shadowDark: #eff5feaa;
+  --shadowLight: #eff5feaa;
 }
 
-:root {
-  --shadowDark: #D9DDE6;
-  --shadowLight: #EFF5FE;
-}
-
-body {
+.bg-image {
   background-image: url('../../images/blurred.jpeg');
   background-size: cover;
 }
@@ -21,10 +17,6 @@ body {
   border-radius: 25px;
   padding: 1.5rem;
   box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
-}
-
-input {
-  background: var(--shadowLight) !important;
 }
 
 .alfa {
