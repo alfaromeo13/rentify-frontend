@@ -1,51 +1,5 @@
 <section class="hero main_hero is-fullheight">
-  <!-- <div class="hero-head">
-    <div class="first_nav">
-      <div class="container">
-        <nav class="navbar">
-          <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" (click)="toggleMobileView()"
-              aria-expanded="false" data-target="navbarBasicExample" [ngClass]="{'is-active':isMobileNavActive}">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-          </div>
 
-          <div id="navbarBasicExample" class="navbar-menu" [ngClass]="{'is-active':isMobileNavActive}">
-            <div class="navbar-start">
-              <a class="navbar-item" *ngFor="let link of links" [routerLink]="link.path"> 
-                  {{link.name}}
-              </a>
-            </div>
-
-    
-            <div class="navbar-end">
-              <div class="navbar-item" *ngIf="!isUserAuthenticated; else userIsAuthenticated">
-                <div class="buttons">
-                  <a class="button is-primary">
-                    <strong>Sign up</strong>
-                  </a>
-                  <a class="button is-primary" routerLink="/login">
-                    Login
-                  </a>
-                </div>
-              </div>
-              <ng-template #userIsAuthenticated>
-                <div class="navbar-item">
-                  <div class="buttons">
-                <a class="button is-danger" (click)="logout()" routerLink="/login">
-                  Logout
-                </a>
-              </div>
-              </div>
-              </ng-template>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div> -->
   <div class="hero-body">
     <div class="container has-text-centered">
       <div class="slider-content animated zoomIn pb-6 welcome-text-container">

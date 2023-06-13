@@ -17,6 +17,7 @@ import { TestComponent } from './testna-komponenta/test.component';
 import { UserComponent } from './user/user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { RoomComponent } from './room/room.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ToastrModule } from 'ngx-toastr';
     LoginComponent,
     ResetPassword,
     ApartmentComponent,
+    RoomComponent,
   ],
   imports: [
     FormsModule,

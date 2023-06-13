@@ -26,6 +26,10 @@ export class NavbarComponent implements OnInit{
             name: "Users",
             path: "/users"
         },
+        {
+            name: "Apartments",
+            path: "/apartments"
+        },
     ];
 
     constructor(

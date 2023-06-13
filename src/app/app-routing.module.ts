@@ -1,10 +1,10 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { ApartmentComponent } from "./apartment/apartment.component";
 import { IsAlreadyAuthenticatedGuard } from "./auth/guards/is-already-authenticated.guard";
 import { isAuthenticated } from "./auth/guards/is-authenticated.guard";
 import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
+import { ApartmentComponent } from './apartment/apartment.component';
 import { ResetPassword } from "./password-reset/reset-password.component";
 import { RegisterComponent } from "./register/register.component";
 import { TestComponent } from "./testna-komponenta/test.component";
@@ -33,7 +33,7 @@ const routes :Routes = [
         //canActivate:[IsAlreadyAuthenticatedGuard],
     },
     {
-        path:'apartment',
+        path:'apartments',
         component: ApartmentComponent,
     },
     {
