@@ -15,7 +15,7 @@ const routes :Routes = [
     {
         path:'users', //http://localhost:4200/users
         component: UserComponent,
-        canActivate:[UserGuard],
+      //  canActivate:[UserGuard],
     },
     // {
     //     path:'admin', //http://localhost:4200/admin
@@ -39,7 +39,7 @@ const routes :Routes = [
     {
         path:'test', //http://localhost:4200/test
         component: TestComponent,
-        canActivate:[isAuthenticated],
+      //  canActivate:[isAuthenticated],
     },
     {
         path:'reset', //http://localhost:4200/reset
