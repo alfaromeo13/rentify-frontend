@@ -133,3 +133,11 @@ a {
     fill: #4b8078
 
 }
+
+.h-275px {
+	height: 275px;
+}
+
+.box-shadow-gray{  
+	box-shadow: 0px 0px 60px 10px #7b7b7b82;
+}

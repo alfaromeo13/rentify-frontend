@@ -1,9 +1,30 @@
 <div class="card rb-card">
     <div class="card-image">
         <div class="card-image">
-            <figure class="image is-16by9">
-                <img src="https://via.placeholder.com/640x360" alt="Craigslist Sarasota Rental Data">
-            </figure>
+            <!-- <figure class="image is-16by9"> -->
+              <div id="{{'carouselExampleIndicators'+soba.pid}}" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators ">
+                  
+                  <li class="box-shadow-gray" *ngFor="let imgs of soba.imgLinks; let i = index;" 
+                    [attr.data-target]="'#carouselExampleIndicators'+soba.pid"
+                    data-slide-to="i" [class.active]="i==0"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div *ngFor="let imgs of soba.imgLinks; let i = index;" class="carousel-item" [class.active]="i==0">
+                    <img class="h-275px d-block w-100" [src]="imgs" alt="First slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="{{'#carouselExampleIndicators'+soba.pid}}" role="button" data-slide="prev">
+                  <span class="box-shadow-gray carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="{{'#carouselExampleIndicators'+soba.pid}}" role="button" data-slide="next">
+                  <span class="box-shadow-gray carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>           
+            
+            <!-- </figure> -->
         </div>
     </div>
     <div class="card-content">
@@ -19,7 +40,7 @@
             <div>
                 <a href="#">
 
-                    <svg style="margin: 10px 10px 0px 4px;" xmlns="http://www.w3.org/2000/svg" height="1.3rem" viewBox="0 0 384 512">
+                    <svg style="margin: 10px 10px 0px 4px;" xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 384 512">
                         <path class="locicon"
                             d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>

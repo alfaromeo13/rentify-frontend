@@ -1,5 +1,6 @@
 export class RoomShowcaseModel{
 
+    public pid: string = "";
     public title : string = "";
     public desc : string = "";
     public imgLinks : string[] = [];
@@ -7,7 +8,8 @@ export class RoomShowcaseModel{
     public price : number = 0.1;
     public rating : number = 0.1;
 
-    constructor(tit:string, des:string,img:string[],loc:string,pri:number, rat:number){
+    constructor(pid: string,tit:string, des:string,img:string[],loc:string,pri:number, rat:number){
+        this.pid = pid;
         this.title = tit;
         this.desc = des;
         this.imgLinks = img;

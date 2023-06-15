@@ -198,11 +198,18 @@ footer {
   .blurredbg{
     filter: blur(10px);
     opacity: .9;
-    position: sticky;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
   }
 
   @media screen and (min-width: 1408px){
   .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: 90vw !important;
   }
+}
+
+.rooms-container{
+  position: absolute; top:16vh; width: 100%;
 }

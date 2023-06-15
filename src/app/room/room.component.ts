@@ -8,12 +8,13 @@ import { RoomShowcaseModel } from '../models/roomshowcase';
 })
 export class RoomComponent implements OnInit {
 
-  constructor() { }
-
   @Input()
-  public soba : RoomShowcaseModel = new RoomShowcaseModel("","",[],"",.2,.1);
+  public soba : RoomShowcaseModel = new RoomShowcaseModel("","","",[],"",.2,.1);
 
   ngOnInit(): void {
   }
+
+
+  constructor() { }
 
 }

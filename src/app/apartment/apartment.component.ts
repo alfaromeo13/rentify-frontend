@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RoomShowcaseModel } from '../models/roomshowcase';
-
+import { v4 as uuid } from 'uuid';
 @Component({
   selector: 'app-apartment',
   templateUrl: './apartment.component.html',
@@ -13,8 +13,14 @@ export class ApartmentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public generateRooms():RoomShowcaseModel[]{
-    return [new RoomShowcaseModel("Jotaseva kuca", "iahdyuahfuawjnfowaio ohwuhdawii dwai 29",["https://m.media-amazon.com/images/M/MV5BZmU5ZDE5NTItN2I1YS00ZmFmLTk3YTgtNzQwOGNkYzFjOWRkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg"],"iahdyuahfuawjnfowaio ohwuhdawii dwai 29",69.69,4.3)];
+  public generateRooms(): RoomShowcaseModel[] {
+    var rez = [];
+    for (let item of [].constructor(10)) {
+      rez.push(new RoomShowcaseModel(uuid()+'', "Jotaseva kuca", "Tamo mu ga zabijaju među guzove", [
+        "https://i.imgur.com/Rt5ZUtT.jpg",
+        "https://i.imgur.com/Vo2wi4c.jpg"], "Doljani BB, Doljani", 69.69, 4.3));
+    }
+    return rez;
   }
 
 }
