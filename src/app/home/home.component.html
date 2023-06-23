@@ -10,18 +10,25 @@
       <div class="columns is-centered">
         <div class="column is-7">
           <div class="search-form">
-            <form>
+            <form [formGroup]="citySearchForm">
               <div class="field has-addons has-shadow-field">
                 <div class="control has-icons-left is-expanded">
                   <div class="control has-icons-left has-icons-right">
-                    <input class="input is-light is-large" type="email" placeholder="Enter city name...">
+                    <input class="input is-light is-large" type="text" 
+                    placeholder="Enter city name..."  formControlName="searchTerm"
+                    list="cityname" [(ngModel)]="selectedCity">
+
+                    <datalist id="cityname">
+                      <option *ngFor="let city of cities" [value]="city.name + ' , ' + city.country.shortCode"></option>
+                    </datalist>
+                   
                     <span class="icon is-large is-left">
                       <i class="fas fa-search"></i>
                     </span>
                   </div>
                 </div> 
                 <div class="control">
-                  <button type="button" class="button is-large is-primary">
+                  <button type="button" class="button is-large is-primary" (click)="search()">
                     <span class="has-text-weight-semibold">Go!</span>
                   </button>
                 </div>

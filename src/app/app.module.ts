@@ -22,6 +22,7 @@ import { PrikazSlikeComponent } from './prikaz-slike/prikaz-slike.component';
 import { FilterComponent } from './filter/filter.component';
 import { RoomDetailsComponent } from './room-details/room-details.component';
 import { ConfirmAccountComponent } from './confirm-account/confirm-account.component';
+import { CityComponent } from './city/city.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ConfirmAccountComponent } from './confirm-account/confirm-account.compo
     RoomComponent,
     PrikazSlikeComponent,
     FilterComponent,
+    CityComponent,
     RoomDetailsComponent,
     ConfirmAccountComponent,
   ],

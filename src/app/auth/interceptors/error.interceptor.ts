@@ -26,7 +26,6 @@ export class ErrorInterceptor implements HttpInterceptor{
           catchError((errorResponse: HttpErrorResponse) => {
             if (errorResponse.status === 401) {
               if(localStorage.getItem('refresh-token') != null){
-                this.toastr.warning("Unauthorized credentials");
                 return this.authService.refresh_token().pipe(
                   switchMap(() => {
                     // Retry the original request with the updated tokens

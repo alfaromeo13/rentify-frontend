@@ -1,5 +1,6 @@
 export class RoomShowcaseModel{
 
+    public liked !: boolean;
     public pid: string = "";
     public title : string = "";
     public desc : string = "";

@@ -28,6 +28,17 @@ body {
   line-height: 1.5;
   background-color: #f0f0f0;
 }
+
+.pozz{
+position: absolute;
+left: 50px;
+top:63px;
+}
+
+/* select {
+  width: 20.5em
+} */
+
 .main_hero {
   background-image: url('../../images/image.jpg');
   background-size: cover;

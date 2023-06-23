@@ -15,7 +15,7 @@ export class RoomComponent implements OnInit {
   }
 
   like(){
-
+    this.soba.liked = !this.soba.liked;
   }
 
   constructor() { }

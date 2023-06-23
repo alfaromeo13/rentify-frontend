@@ -45,8 +45,7 @@ export class AuthService{
         this.httpClient.post(url, null, { params , responseType: 'text' })
         .subscribe(response => {
             this.toastr.success("Mail sent successfully");
-        },error => {
-        // Handle any errors here
+        },error => {// Handle any errors here
             this.toastr.error("Mail not found");
       });
     }
@@ -78,13 +77,12 @@ export class AuthService{
         return this.httpClient.post<JwtToken>(url, null, { headers })
           .pipe( //if our refresh token has expired we have to login again
               tap(responseData => { //otherwise we extended our tokens
-              this.toastr.success("Refreshed token successfully");
               const access = responseData.token;
               const refresh = responseData['refresh-token'];
               localStorage.setItem('access-token', access);
               localStorage.setItem('refresh-token', refresh);
               this.isAuthenticated.next(true);
             })
-          );
+        );
     }
 }

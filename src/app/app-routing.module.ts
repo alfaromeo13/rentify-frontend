@@ -14,6 +14,7 @@ import { FilterComponent } from "./filter/filter.component";
 import { RoomDetailsComponent } from "./room-details/room-details.component";
 import { ConfirmAccountComponent } from "./confirm-account/confirm-account.component";
 import { PrikazSlikeComponent } from "./prikaz-slike/prikaz-slike.component";
+import { CityComponent } from "./city/city.component";
 
 const routes :Routes = [
     {
@@ -72,6 +73,10 @@ const routes :Routes = [
     {
         path:'showimg',
         component:PrikazSlikeComponent,
+    },
+    {
+        path:'showCities',
+        component:CityComponent,
     },
     {   //http://localhost:4200/something...
         path:'**', //anything else is entered
